@@ -1,0 +1,230 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class frmViewUsers
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.UserID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Fullname = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Contact = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Username = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UserType = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LoginStatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AccountStatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ApproveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BlockUnblockToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Panel1.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ContextMenuStrip1.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.btnClose)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(898, 39)
+        Me.Panel1.TabIndex = 1
+        '
+        'btnClose
+        '
+        Me.btnClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnClose.BackColor = System.Drawing.Color.DarkRed
+        Me.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.DarkRed
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.ForeColor = System.Drawing.Color.White
+        Me.btnClose.Location = New System.Drawing.Point(869, 0)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(29, 23)
+        Me.btnClose.TabIndex = 3
+        Me.btnClose.TabStop = False
+        Me.btnClose.Text = "X"
+        Me.btnClose.UseVisualStyleBackColor = False
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.UserID, Me.Fullname, Me.Contact, Me.Username, Me.UserType, Me.LoginStatus, Me.AccountStatus})
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 75)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.RowHeadersVisible = False
+        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridView1.Size = New System.Drawing.Size(874, 253)
+        Me.DataGridView1.TabIndex = 2
+        '
+        'UserID
+        '
+        Me.UserID.DataPropertyName = "UserID"
+        Me.UserID.HeaderText = "User ID"
+        Me.UserID.Name = "UserID"
+        Me.UserID.ReadOnly = True
+        Me.UserID.Visible = False
+        '
+        'Fullname
+        '
+        Me.Fullname.DataPropertyName = "Fullname"
+        Me.Fullname.HeaderText = "Name"
+        Me.Fullname.Name = "Fullname"
+        Me.Fullname.ReadOnly = True
+        Me.Fullname.Width = 200
+        '
+        'Contact
+        '
+        Me.Contact.DataPropertyName = "ContactNo"
+        Me.Contact.HeaderText = "Contact No"
+        Me.Contact.Name = "Contact"
+        Me.Contact.ReadOnly = True
+        Me.Contact.Width = 125
+        '
+        'Username
+        '
+        Me.Username.DataPropertyName = "Username"
+        Me.Username.HeaderText = "Username"
+        Me.Username.Name = "Username"
+        Me.Username.ReadOnly = True
+        Me.Username.Width = 125
+        '
+        'UserType
+        '
+        Me.UserType.DataPropertyName = "UserType"
+        Me.UserType.HeaderText = "Account Type"
+        Me.UserType.Name = "UserType"
+        Me.UserType.ReadOnly = True
+        Me.UserType.Width = 150
+        '
+        'LoginStatus
+        '
+        Me.LoginStatus.DataPropertyName = "LoginStatus"
+        Me.LoginStatus.HeaderText = "Login Status"
+        Me.LoginStatus.Name = "LoginStatus"
+        Me.LoginStatus.ReadOnly = True
+        Me.LoginStatus.Width = 125
+        '
+        'AccountStatus
+        '
+        Me.AccountStatus.DataPropertyName = "AccountStatus"
+        Me.AccountStatus.HeaderText = "Account Status"
+        Me.AccountStatus.Name = "AccountStatus"
+        Me.AccountStatus.ReadOnly = True
+        Me.AccountStatus.Width = 140
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Lastname", "Username", "Account Status"})
+        Me.ComboBox1.Location = New System.Drawing.Point(12, 45)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(183, 24)
+        Me.ComboBox1.TabIndex = 3
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(201, 45)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(191, 23)
+        Me.TextBox1.TabIndex = 4
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Font = New System.Drawing.Font("Segoe UI", 15.0!)
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ApproveToolStripMenuItem, Me.DeleteToolStripMenuItem, Me.EditToolStripMenuItem, Me.BlockUnblockToolStripMenuItem})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(213, 132)
+        '
+        'ApproveToolStripMenuItem
+        '
+        Me.ApproveToolStripMenuItem.Name = "ApproveToolStripMenuItem"
+        Me.ApproveToolStripMenuItem.Size = New System.Drawing.Size(160, 32)
+        Me.ApproveToolStripMenuItem.Text = "Approve"
+        '
+        'DeleteToolStripMenuItem
+        '
+        Me.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem"
+        Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(160, 32)
+        Me.DeleteToolStripMenuItem.Text = "Delete"
+        '
+        'EditToolStripMenuItem
+        '
+        Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(212, 32)
+        Me.EditToolStripMenuItem.Text = "Edit"
+        '
+        'BlockUnblockToolStripMenuItem
+        '
+        Me.BlockUnblockToolStripMenuItem.Name = "BlockUnblockToolStripMenuItem"
+        Me.BlockUnblockToolStripMenuItem.Size = New System.Drawing.Size(212, 32)
+        Me.BlockUnblockToolStripMenuItem.Text = "Block/Unblock"
+        '
+        'frmViewUsers
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(898, 342)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.Panel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Name = "frmViewUsers"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "frmViewUsers"
+        Me.Panel1.ResumeLayout(False)
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ContextMenuStrip1.ResumeLayout(False)
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents btnClose As System.Windows.Forms.Button
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents UserID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Fullname As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Contact As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Username As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents UserType As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents LoginStatus As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AccountStatus As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents ApproveToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents DeleteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents EditToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents BlockUnblockToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+End Class

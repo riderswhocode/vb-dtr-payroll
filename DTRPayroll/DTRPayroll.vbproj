@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9A0380B8-E867-44CB-835E-2639B9B8C7DA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DTRPayroll.My.MyApplication</StartupObject>
+    <RootNamespace>DTRPayroll</RootNamespace>
+    <AssemblyName>DTRPayroll</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DTRPayroll.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DTRPayroll.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCA.Designer.vb">
+      <DependentUpon>frmCA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCAAdd.Designer.vb">
+      <DependentUpon>frmCAAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCAAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCADetails.Designer.vb">
+      <DependentUpon>frmCADetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCADetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeduction.Designer.vb">
+      <DependentUpon>frmDeduction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeduction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeductionAdd.Designer.vb">
+      <DependentUpon>frmDeductionAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeductionAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLeave.Designer.vb">
+      <DependentUpon>frmLeave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLeave.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLeaveAdd.Designer.vb">
+      <DependentUpon>frmLeaveAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLeaveAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewUser1.Designer.vb">
+      <DependentUpon>frmNewUser1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewUser1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\frmEmployee.Designer.vb">
+      <DependentUpon>frmEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\frmEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\frmViewEmployee.Designer.vb">
+      <DependentUpon>frmViewEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\frmViewEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConvert.Designer.vb">
+      <DependentUpon>frmConvert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConvert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepartment.Designer.vb">
+      <DependentUpon>frmDepartment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepartment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewUser.Designer.vb">
+      <DependentUpon>frmNewUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPass.Designer.vb">
+      <DependentUpon>frmPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassAdd.Designer.vb">
+      <DependentUpon>frmPassAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRate.Designer.vb">
+      <DependentUpon>frmRate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRateAdd.Designer.vb">
+      <DependentUpon>frmRateAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRateAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTravel.Designer.vb">
+      <DependentUpon>frmTravel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTravel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTravelAdd.Designer.vb">
+      <DependentUpon>frmTravelAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTravelAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewUsers.Designer.vb">
+      <DependentUpon>frmViewUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions.vb" />
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Server Settings\frmDBSettings.Designer.vb">
+      <DependentUpon>frmDBSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Server Settings\frmDBSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmCA.resx">
+      <DependentUpon>frmCA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCAAdd.resx">
+      <DependentUpon>frmCAAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCADetails.resx">
+      <DependentUpon>frmCADetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeduction.resx">
+      <DependentUpon>frmDeduction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeductionAdd.resx">
+      <DependentUpon>frmDeductionAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLeave.resx">
+      <DependentUpon>frmLeave.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLeaveAdd.resx">
+      <DependentUpon>frmLeaveAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewUser1.resx">
+      <DependentUpon>frmNewUser1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\frmEmployee.resx">
+      <DependentUpon>frmEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\frmViewEmployee.resx">
+      <DependentUpon>frmViewEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConvert.resx">
+      <DependentUpon>frmConvert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepartment.resx">
+      <DependentUpon>frmDepartment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewUser.resx">
+      <DependentUpon>frmNewUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPass.resx">
+      <DependentUpon>frmPass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassAdd.resx">
+      <DependentUpon>frmPassAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRate.resx">
+      <DependentUpon>frmRate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRateAdd.resx">
+      <DependentUpon>frmRateAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTravel.resx">
+      <DependentUpon>frmTravel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTravelAdd.resx">
+      <DependentUpon>frmTravelAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewUsers.resx">
+      <DependentUpon>frmViewUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Server Settings\frmDBSettings.resx">
+      <DependentUpon>frmDBSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <EmbeddedResource Include="dtr.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
